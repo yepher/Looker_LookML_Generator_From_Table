@@ -12,24 +12,6 @@ import (
 	"strings"
 )
 
-/**
-
-Example query to list tables columns and types
-
-SELECT column_name,
-       data_type,
-       character_maximum_length
-FROM   information_schema.columns
-WHERE  table_schema = '{{SCHEMA}}'
-       AND table_name = '{{TABLE}}'
-ORDER BY column_name ASC
-
-
-./looker_new_column_helper -table=./input.csv -lookml=~/spWorking/sparkpost_github/busops-looker/Salesforce/salesforce_accounts.view.lkml
-
-
-**/
-
 type InputFields struct {
 	Column string
 	Type   string
