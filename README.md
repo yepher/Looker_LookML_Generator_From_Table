@@ -2,7 +2,7 @@
 
 [Looker](https://looker.com/) has a nice code generator from existing tables. But when columns are added there is no feature on looker to add missing columns to the view.
 
-This tool is a very early work in progress to render LookML for new columns and eventually show columns implemented in LookML that do not exist in the database.
+This tool is a very early work in progress to render LookML for new columns and optionally show columns implemented in LookML that do not exist in the database.
 
 This is a quick and dirty implementation using Redshift output.
 
