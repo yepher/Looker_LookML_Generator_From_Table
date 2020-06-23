@@ -17,14 +17,16 @@ This is a quick and dirty implementation using Redshift output.
 
 |Name | | |
 |---|---|---|
-|table | |The CSV that contains the table description |
+|check | |Will report any columns found in LookML that are not in the table |
 |lookml | |The LookML view that represents the table |
 |suffix | |Sometimes columns have an annoying suffix like `_c`. If the suffix is passed in that suffix is removed from the dimension. |
+|table | |The CSV that contains the table description |
+|verbose | |Prints debug information to console |
 
 
 **Example:**
 
-`looker_new_column_helper -table=./input.csv -lookml=accounts.view.lkml -suffix="_c"`
+`looker_new_column_helper -table=./input.csv -lookml=accounts.view.lkml -suffix="_c" -check=true`
 
 ### Dump Table Description To CSV
 
